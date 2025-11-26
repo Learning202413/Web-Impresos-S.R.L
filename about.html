@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/web.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { brand: { red: '#E31B23', dark: '#B91C1C', black: '#0F172A' } } } }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+    
+    <nav class="sticky top-0 z-50 bg-white shadow-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href = 'index.html'">
+                    <img src="/img/logo.png" alt="Logo" style="transform: scale(2.0);" class="h-10 w-auto mr-3 rounded">
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-red font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-50">Inicio</a>
+                    <a href="services.html" class="text-gray-600 hover:text-brand-red font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-50">Servicios</a>
+                    <a href="about.html" class="text-brand-red bg-gray-50 font-medium px-3 py-2 rounded-md">Nosotros</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-brand-red font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-50">Contacto</a>
+                    <a href="tracking.html" class="ml-4 px-6 py-2.5 bg-brand-red text-white font-bold rounded-full shadow-lg hover:bg-brand-dark transition-all flex items-center">
+                        <i data-lucide="package-search" class="w-4 h-4 mr-2"></i> Rastrear
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-red focus:outline-none p-2"><i data-lucide="menu" class="w-7 h-7"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-2 absolute w-full shadow-xl">
+            <div class="flex flex-col space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-gray-700 hover:text-brand-red">Inicio</a>
+                <a href="services.html" class="block px-4 py-3 text-gray-700 hover:text-brand-red">Servicios</a>
+                <a href="about.html" class="block px-4 py-3 text-brand-red font-medium bg-red-50 rounded-lg">Nosotros</a>
+                <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:text-brand-red">Contacto</a>
+                <a href="tracking.html" class="block px-4 py-3 text-center bg-brand-red text-white font-bold rounded-lg">Rastrear Pedido</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-20 bg-white animate-fade-in">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-red-100 rounded-full -z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" alt="Imprenta Taller" class="rounded-2xl shadow-2xl border-4 border-white w-full object-cover h-96">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border border-gray-100 hidden md:block">
+                            <p class="text-4xl font-bold text-brand-red mb-1">15+</p>
+                            <p class="text-sm text-gray-500 font-medium">Años de Experiencia</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-bold text-brand-red uppercase tracking-wider mb-2">Sobre Nosotros</h2>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Más que una imprenta, somos tus aliados estratégicos.</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Fundada en enero de 2005 en la ciudad de Huancayo, Impresos S.R.L. inició como una microempresa familiar liderada por Rocío Castillo Galvani y Adelman Castillo Galvani. A lo largo de los años, ha evolucionado de un pequeño taller a una mediana empresa consolidada, ampliando su infraestructura y maquinaria para atender al sector público y privado a nivel nacional.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-gray-900 flex items-center mb-2"><i data-lucide="target" class="w-5 h-5 text-brand-red mr-2"></i> Misión</h4>
+                                <p class="text-sm text-gray-500">"Somos una empresa dedicada al rubro de edición, impresión y servicios gráficos en general. Brindamos alta calidad a nuestros clientes en términos de eficiencia, eficacia y economía, con el fin de satisfacer sus necesidades y exigencias.".</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 flex items-center mb-2"><i data-lucide="eye" class="w-5 h-5 text-brand-red mr-2"></i> Visión</h4>
+                                <p class="text-sm text-gray-500">"Ser una empresa líder a nivel regional y nacional brindando calidad en el servicio y en nuestros productos, protegiendo nuestro medio ambiente mediante la implementación de políticas acorde al ISO 14001.".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-black text-white py-8 mt-auto text-center text-sm">
+        &copy; 2025 Impresos S.R.L. Todos los derechos reservados.
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

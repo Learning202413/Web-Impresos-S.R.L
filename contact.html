@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/web.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { brand: { red: '#E31B23', dark: '#B91C1C', black: '#0F172A' } } } }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+    
+    <nav class="sticky top-0 z-50 bg-white shadow-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href = 'index.html'">
+                    <img src="/img/logo.png" alt="Logo" style="transform: scale(2.0);" class="h-10 w-auto mr-3 rounded">
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-red font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-50">Inicio</a>
+                    <a href="services.html" class="text-gray-600 hover:text-brand-red font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-50">Servicios</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-red font-medium transition-colors px-3 py-2 rounded-md hover:bg-gray-50">Nosotros</a>
+                    <a href="contact.html" class="text-brand-red bg-gray-50 font-medium px-3 py-2 rounded-md">Contacto</a>
+                    <a href="tracking.html" class="ml-4 px-6 py-2.5 bg-brand-red text-white font-bold rounded-full shadow-lg hover:bg-brand-dark transition-all flex items-center">
+                        <i data-lucide="package-search" class="w-4 h-4 mr-2"></i> Rastrear
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-red focus:outline-none p-2"><i data-lucide="menu" class="w-7 h-7"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-2 absolute w-full shadow-xl">
+            <div class="flex flex-col space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-gray-700 hover:text-brand-red">Inicio</a>
+                <a href="services.html" class="block px-4 py-3 text-gray-700 hover:text-brand-red">Servicios</a>
+                <a href="about.html" class="block px-4 py-3 text-gray-700 hover:text-brand-red">Nosotros</a>
+                <a href="contact.html" class="block px-4 py-3 text-brand-red font-medium bg-red-50 rounded-lg">Contacto</a>
+                <a href="tracking.html" class="block px-4 py-3 text-center bg-brand-red text-white font-bold rounded-lg">Rastrear Pedido</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-20 bg-slate-50 animate-fade-in">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900">Contáctanos</h2>
+                    <p class="text-gray-500 mt-2">Estamos listos para iniciar tu próximo proyecto.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100 hover:border-red-200 transition">
+                        <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-red">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-1">Llámanos</h4>
+                        <p class="text-gray-500 text-sm">064-200198</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100 hover:border-red-200 transition">
+                        <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-red">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-1">Visítanos</h4>
+                        <p class="text-gray-500 text-sm">Oficina: Jr. Omar Yali N° 370, Huancayo</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100 hover:border-red-200 transition">
+                    <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-red">
+                        <i data-lucide="user" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-1">Gerencia General</h4>
+                    <p class="text-gray-500 text-sm">Bach. Romar Luis Camargo Maravi.</p>
+                </div>
+                </div>
+                 <div class="mt-12 bg-gray-200 rounded-2xl h-96 w-full overflow-hidden shadow-inner border border-gray-200">
+    <iframe 
+        src="https://maps.google.com/maps?q=Av.+Ferrocarril+781,+Huancayo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-black text-white py-8 mt-auto text-center text-sm">
+        &copy; 2025 Impresos S.R.L. Todos los derechos reservados.
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
